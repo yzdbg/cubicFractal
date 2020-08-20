@@ -1,25 +1,4 @@
-<html>
-
-<head>
-	<title>Fractals</title>
-	<style>
-		body {
-			margin: 0;
-		}
-
-		canvas {
-			display: block;
-		}
-	</style>
-</head>
-
-<body>
-
-	<script type="module">
-		import * as THREE from '../js/three.module.js';
-
-		import { OrbitControls } from '../node_modules/three/examples/jsm/controls/OrbitControls.js';
-		var radius = 100;
+var radius = 100;
 		var theta = 45;
 		var fractal = new THREE.Group();
 		const scale = 0.95
@@ -87,8 +66,3 @@
 		};
 
 		animate();
-	</script>
-
-</body>
-
-</html>
