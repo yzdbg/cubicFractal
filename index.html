@@ -37,7 +37,9 @@
 				var geometry = new THREE.BoxBufferGeometry( edge, edge, edge );
 				var edges = new THREE.EdgesGeometry( geometry );
 				var line = new THREE.LineSegments( edges, new THREE.LineBasicMaterial( { 
-					color: 0x00ff66} ) );
+					color: 0x00ff66,
+					transparent:true,
+					opacity:edge/650+0.1} ) );
 
 				line.rotateX(a)
 				fractal.add(line)
